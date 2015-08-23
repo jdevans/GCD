@@ -2,14 +2,14 @@ The "run_analysis.R" script reports, for each of 30 test subjects and each of 6 
 and std() variables from the input dataset (detailed in input_codebook.txt). There are 66 such variables; so the output
 table has 180 rows of 68 columns each, plus a single-row header listing the fieldnames (details below).
 
-Text strings (in the header and the "activity" field) are delmited by '"'.
+Text strings (in the header and the "activity" field) are delimited by '"'.
 
 Fields in the output:
 ====================
 * subject - test subject ID (#1 - #30)
 * activity - activity (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
-
-All the other fields (below) are AVERAGES (by subject and activity) of the corresponding fields described in input_codebook.txt:
+All the other fields (below) are AVERAGES (by subject and activity) of the corresponding fields 
+described in input_codebook.txt:
 * tBodyAcc.mean.X
 * tBodyAcc.mean.Y
 * tBodyAcc.mean.Z
