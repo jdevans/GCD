@@ -4,16 +4,17 @@ Assembles and summarizes data collected from accelerometers in the Samsung Galax
 The data used by this script are at the following URL:
 * https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-After unpacking the zip file, place this R routine alongside the "test" and "train" directories.
+After unpacking the zip file, place this script alongside the "test" and "train" directories.
 
 This script takes no arguments; it reads from the following files:
 * features.txt
+* activity_labels.txt
 * train/{X,y,subject}_train.txt
 * test/{X,y,subject}_test.txt
 
 It writes its output into the file "GCD_Project_output.txt".
 
-It performes the following operations on the input data:
+It performs the following operations on the input data:
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
 * Uses descriptive activity names to name the activities in the data set
