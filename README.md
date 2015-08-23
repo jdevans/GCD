@@ -1,14 +1,15 @@
-## run_analysis.R ######################################
-Assembles and summarizes data collected from accelerometers from the Samsung Galaxy S smartphone. 
-* Here are the data for the project:
-   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. 
-* A full description of the data of is available at
-   http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+## run_analysis.R
+Assembles and summarizes data collected from accelerometers in the Samsung Galaxy S smartphone. Reads accelerometer data resulting from a series of activities, such as walking, sitting, etc. See the file "input_codebook.txt" for details on the input data. (A full description of the data is available at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.)
+
+The data used by this script are at the following URL:
+* https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+After unpacking the zip file, place this R routine alongside the "test" and "train" directories.
 
 This script performes the following operations on the input data:
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
 * Uses descriptive activity names to name the activities in the data set
 * Appropriately labels the data set with descriptive variable names. 
-* From the data set in step 4, creates a second, independent tidy data set 
-    with the average of each variable for each activity and each subject.
+* From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+More specifically, the script computes and outputs the means of 66 different measurements for each of 6 activities and for each of 30 test subjects. See the file "output_codebook.txt" for details on the output data.
