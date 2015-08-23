@@ -66,7 +66,11 @@ names(data) <- gsub ("\\.\\.","", names(data))
 
 # Finally, Requirement 5: From this data set, create a second, independent tidy data set
 # with the average of each variable by subject and by activity.
+# Lots of ways to do this; we'll use melt() and dcast()
 dataMelt <- melt(data,id=c("subject","activity")) # (Use all other columns as measure vars)
+# melt() produces a very long table with each variable value for each (subject,activity) pair
 output <- dcast(dataMelt, subject + activity ~ variable, mean) # Produce averages by subject & activity
-# And write out this table
+# dcast() with the mean() function averages each variable by subject and activity
+
+# Now write out this new, much shorter table
 write.table (output, file="GCD_Project_output.txt", row.names=FALSE)
