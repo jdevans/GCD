@@ -8,7 +8,9 @@ Fields in the output:
 ====================
 * subject - test subject ID (#1 - #30)
 * activity - activity (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
-* tBodyAcc.mean.X -
+
+All the other fields (below) are AVERAGES (by subject and activity) of the corresponding fields described in input_codebook.txt:
+* tBodyAcc.mean.X
 * tBodyAcc.mean.Y
 * tBodyAcc.mean.Z
 * tGravityAcc.mean.X
