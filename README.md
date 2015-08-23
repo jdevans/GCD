@@ -3,6 +3,7 @@ Assembles and summarizes data collected from accelerometers in the Samsung Galax
 
 The data used by this script are at the following URL:
 * https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 After unpacking the zip file, place this R routine alongside the "test" and "train" directories.
 
 This script performes the following operations on the input data:
