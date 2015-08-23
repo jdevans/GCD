@@ -7,6 +7,9 @@ The data used by this script are at the following URL:
 After unpacking the zip file, place this R routine alongside the "test" and "train" directories.
 
 This script takes no arguments; it reads from the following files:
+* features.txt
+* train/{X,y,subject}_train.txt
+* test/{X,y,subject}_test.txt
 
 It performes the following operations on the input data:
 * Merges the training and the test sets to create one data set.
