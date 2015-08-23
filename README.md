@@ -11,6 +11,8 @@ This script takes no arguments; it reads from the following files:
 * train/{X,y,subject}_train.txt
 * test/{X,y,subject}_test.txt
 
+It writes its output into the file "GCD_Project_output.txt".
+
 It performes the following operations on the input data:
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -18,4 +20,4 @@ It performes the following operations on the input data:
 * Appropriately labels the data set with descriptive variable names. 
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Specifically, the script computes the means of 66 different measurements for each of 6 activities and for each of 30 test subjects. It writes this table (180 rows x 68 columns) into the file "GCD_Project_output.txt". See the file "output_codebook.txt" for details on the output data.
+Specifically, the script computes the means of 66 different measurements for each of 6 activities and for each of 30 test subjects (180 rows x 68 columns). See the file "output_codebook.txt" for details on the output data.
